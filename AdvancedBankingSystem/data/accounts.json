@@ -1,0 +1,37 @@
+{
+  "99028539-3404-4d3c-aca0-a9066546957f": {
+    "holder_name": "John Doe",
+    "pin": "1234",
+    "password": "password123",
+    "balance": 1000.0,
+    "account_number": "99028539-3404-4d3c-aca0-a9066546957f",
+    "transaction_history": [
+      {
+        "type": "deposit",
+        "amount": 1000.0,
+        "category": "income",
+        "time": "2026-05-13T00:32:59",
+        "balance_after": 1000.0
+      }
+    ],
+    "account_type": "savings"
+  },
+  "4f2cd24a-30c9-4b6d-b4db-10c0e3fc29f6": {
+    "holder_name": "preetham",
+    "pin": "1331",
+    "password": "punny",
+    "balance": 1000000.0,
+    "account_number": "4f2cd24a-30c9-4b6d-b4db-10c0e3fc29f6",
+    "transaction_history": [
+      {
+        "type": "deposit",
+        "amount": 1000000.0,
+        "category": "personal",
+        "time": "2026-05-13T00:44:24",
+        "balance_after": 1000000.0
+      }
+    ],
+    "account_type": "current",
+    "overdraft_limit": 25000.0
+  }
+}

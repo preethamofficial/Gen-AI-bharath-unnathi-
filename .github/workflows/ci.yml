@@ -1,0 +1,27 @@
+name: Portfolio Project Checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m compileall AdvancedBankingSystem StudentAnalytics ReasoningAgent StudyGuideEcosystem PromptSDK EmailAutomationAgent EnterpriseMCPWorkflowAgent AdvancedRAGResearchCopilot MultiAgentAIDebateEcosystem
+
+  frontend-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - working-directory: FrontendGeneratorStudio
+        run: npm install
+      - working-directory: FrontendGeneratorStudio
+        run: npm run build
